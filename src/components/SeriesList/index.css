@@ -1,0 +1,25 @@
+.SeriesList {
+  margin: 10px;
+  height: 240px;
+  width: 160px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  gap: 2rem;
+}
+
+.SeriesList__poster {
+  height: 240px;
+  width: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.25);
+  filter: grayscale(0.5);
+  transition: all 0.35s;
+}
+
+.SeriesList__poster:hover {
+  filter: grayscale(0);
+  transform: scale(1.05);
+}

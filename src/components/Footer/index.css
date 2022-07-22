@@ -1,0 +1,62 @@
+.footer__container {
+  background-color: rgb(151, 39, 39);
+}
+
+.icon {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 26px;
+  color: #fff;
+  border-radius: 50%;
+  outline: 2px solid #fff;
+  transition-property: outline-offset, outline-color, background-color;
+  transition-duration: 0.25s;
+}
+
+.icons {
+  padding-top: 8rem;
+  padding-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  column-gap: 25px;
+}
+
+.icon:hover {
+  outline-offset: 4px;
+}
+
+.icon:hover i {
+  animation: shake 0.25s;
+}
+
+.icon--linkedin:hover {
+  background-color: black;
+  outline-color: black;
+}
+
+.icon--github:hover {
+  background-color: black;
+  outline-color: black;
+}
+
+@keyframes shake {
+  10% {
+    transform: rotate(15deg);
+  }
+
+  20% {
+    transform: rotate(-15deg);
+  }
+
+  30% {
+    transform: rotate(15deg);
+  }
+
+  40% {
+    transform: rotate(-15deg);
+  }
+}
